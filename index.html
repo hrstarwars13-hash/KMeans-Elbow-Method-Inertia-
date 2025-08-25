@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMeans Clustering with Elbow Method Graph</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>KMeans Clustering with Elbow Method Graph</h1>
+    <div class="controls">
+    <label>Number of Points: <input type="number" id="numPoints" min="100" max="300" value="200"></label>
+        <label>K (Clusters): <input type="number" id="kValue" min="1" max="6" value="3"></label>
+        <button id="assignBtn">Assign Points</button>
+        <button id="moveBtn">Move Centroids</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+    <canvas id="clusterCanvas" width="500" height="500"></canvas>
+    <h2>Elbow Method (Inertia vs K)</h2>
+    <canvas id="elbowCanvas" width="500" height="200"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
